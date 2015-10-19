@@ -1,0 +1,161 @@
+{
+  "Metadata": {
+    "$type": "Tela.Erp.Core.GcMetadata, Tela.Erp.Core",
+    "GenericodeVersion": "1.0",
+    "Code": "gc",
+    "Name": "UnitOfMeasureCode",
+    "Version": "8e",
+    "Information": {
+      "LocationUri": "http://docs.oasis-open.org/ubl/os-UBL-2.1/cl/gc/default/UnitOfMeasureCode-2.1.gc",
+      "IsRestriction": false,
+      "Filename": "UnitOfMeasureCode-2.1.gc",
+      "TypeId": "Tela.Erp.Interfaces.Annotations.GcMetadataAttribute, Tela.Erp.Interfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    }
+  },
+  "EnumName": "UnitOfWeight",
+  "JsonFilename": null,
+  "Namespace": "Frontera.Base",
+  "CodeField": "code",
+  "ValueField": "name",
+  "EnumFieldList": {
+    "LBR": "Lb"
+    //"STN": "ton"
+  },
+  "GcFieldsAnalyzed": {
+    "code": {
+      "$type": "Tela.Erp.Core.GcFieldDataSummary, Tela.Erp.Core",
+      "ColumnRef": "code",
+      "MinLength": 2,
+      "MaxLength": 3,
+      "AreNumeric": false,
+      "AreIntegers": false,
+      "EmptyRowsCount": 0,
+      "Weight": 5723
+    },
+    "status": {
+      "$type": "Tela.Erp.Core.GcFieldDataSummary, Tela.Erp.Core",
+      "ColumnRef": "status",
+      "MinLength": 1,
+      "MaxLength": 1,
+      "AreNumeric": false,
+      "AreIntegers": false,
+      "EmptyRowsCount": 1708,
+      "Weight": 382
+    },
+    "name": {
+      "$type": "Tela.Erp.Core.GcFieldDataSummary, Tela.Erp.Core",
+      "ColumnRef": "name",
+      "MinLength": 3,
+      "MaxLength": 88,
+      "AreNumeric": false,
+      "AreIntegers": false,
+      "EmptyRowsCount": 0,
+      "Weight": 40033
+    },
+    "description": {
+      "$type": "Tela.Erp.Core.GcFieldDataSummary, Tela.Erp.Core",
+      "ColumnRef": "description",
+      "MinLength": 12,
+      "MaxLength": 291,
+      "AreNumeric": false,
+      "AreIntegers": false,
+      "EmptyRowsCount": 1340,
+      "Weight": 67448
+    },
+    "levelcategory": {
+      "$type": "Tela.Erp.Core.GcFieldDataSummary, Tela.Erp.Core",
+      "ColumnRef": "levelcategory",
+      "MinLength": 1,
+      "MaxLength": 7,
+      "AreNumeric": false,
+      "AreIntegers": false,
+      "EmptyRowsCount": 0,
+      "Weight": 4136
+    },
+    "symbol": {
+      "$type": "Tela.Erp.Core.GcFieldDataSummary, Tela.Erp.Core",
+      "ColumnRef": "symbol",
+      "MinLength": 1,
+      "MaxLength": 20,
+      "AreNumeric": false,
+      "AreIntegers": false,
+      "EmptyRowsCount": 543,
+      "Weight": 9267
+    },
+    "conversionfactor": {
+      "$type": "Tela.Erp.Core.GcFieldDataSummary, Tela.Erp.Core",
+      "ColumnRef": "conversionfactor",
+      "MinLength": 1,
+      "MaxLength": 40,
+      "AreNumeric": false,
+      "AreIntegers": false,
+      "EmptyRowsCount": 610,
+      "Weight": 19805
+    }
+  },
+  "FieldsImplemented": {
+    "code": {
+      "GcColumnRef": "code",
+      "DataType": "Code",
+      "Min": 1,
+      "Max": 20,
+      "EnumPosition": [
+        "Code"
+      ],
+      "TypeId": "Tela.Erp.Interfaces.Annotations.GcEnumFieldAttribute, Tela.Erp.Interfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    "status": {
+      "GcColumnRef": "status",
+      "DataType": "StringValue<StringMin1, StringMax1>",
+      "Min": 1,
+      "Max": 1,
+      "EnumPosition": [],
+      "TypeId": "Tela.Erp.Interfaces.Annotations.GcEnumFieldAttribute, Tela.Erp.Interfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    "name": {
+      "GcColumnRef": "name",
+      "DataType": "Description",
+      "Min": 1,
+      "Max": 100,
+      "EnumPosition": [
+        "Value",
+        "Comments"
+      ],
+      "TypeId": "Tela.Erp.Interfaces.Annotations.GcEnumFieldAttribute, Tela.Erp.Interfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    "description": {
+      "GcColumnRef": "description",
+      "DataType": "Memo",
+      "Min": 1,
+      "Max": 1000,
+      "EnumPosition": [
+        "CommentsAdditional"
+      ],
+      "TypeId": "Tela.Erp.Interfaces.Annotations.GcEnumFieldAttribute, Tela.Erp.Interfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    "levelcategory": {
+      "GcColumnRef": "levelcategory",
+      "DataType": "StringValue<StringMin1, StringMax7>",
+      "Min": 1,
+      "Max": 7,
+      "EnumPosition": [],
+      "TypeId": "Tela.Erp.Interfaces.Annotations.GcEnumFieldAttribute, Tela.Erp.Interfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    "symbol": {
+      "GcColumnRef": "symbol",
+      "DataType": "StringValue<StringMin1, StringMax20>",
+      "Min": 1,
+      "Max": 20,
+      "EnumPosition": [],
+      "TypeId": "Tela.Erp.Interfaces.Annotations.GcEnumFieldAttribute, Tela.Erp.Interfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    "conversionfactor": {
+      "GcColumnRef": "conversionfactor",
+      "DataType": "StringValue<StringMin1, StringMax40>",
+      "Min": 1,
+      "Max": 40,
+      "EnumPosition": [],
+      "TypeId": "Tela.Erp.Interfaces.Annotations.GcEnumFieldAttribute, Tela.Erp.Interfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    }
+  }
+}

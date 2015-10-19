@@ -1,0 +1,96 @@
+{
+  "Metadata": {
+    "$type": "Tela.Erp.Core.GcMetadata, Tela.Erp.Core",
+    "GenericodeVersion": "1.0",
+    "Code": "gc",
+    "Name": "TransportEquipmentTypeCode",
+    "Version": "D10B",
+    "Information": {
+      "LocationUri": "http://docs.oasis-open.org/ubl/os-UBL-2.1/cl/gc/default/TransportEquipmentTypeCode-2.1.gc",
+      "IsRestriction": false,
+      "Filename": "TransportEquipmentTypeCode-2.1.gc",
+      "TypeId": "Tela.Erp.Interfaces.Annotations.GcMetadataAttribute, Tela.Erp.Interfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    }
+  },
+  "EnumName": "TransportEquipmentType",
+  "JsonFilename": null,
+  "Namespace": "Frontera.Base",
+  "CodeField": "code",
+  "ValueField": "name",
+  "EnumFieldList": {
+    "AG": "Slipsheet",
+    //"AO": "Pallet_40x48",
+    "BPT": "RollerCage",
+    "BPV": "Wrapping",
+    "CN": "Container",
+    "PA": "Pallet",
+    "PL": "Platform",
+    "TE": "Trailer",
+    "UL": "AircraftContainer"
+  },
+  "GcFieldsAnalyzed": {
+    "code": {
+      "$type": "Tela.Erp.Core.GcFieldDataSummary, Tela.Erp.Core",
+      "ColumnRef": "code",
+      "MinLength": 2,
+      "MaxLength": 3,
+      "AreNumeric": false,
+      "AreIntegers": false,
+      "EmptyRowsCount": 0,
+      "Weight": 155
+    },
+    "name": {
+      "$type": "Tela.Erp.Core.GcFieldDataSummary, Tela.Erp.Core",
+      "ColumnRef": "name",
+      "MinLength": 4,
+      "MaxLength": 65,
+      "AreNumeric": false,
+      "AreIntegers": false,
+      "EmptyRowsCount": 0,
+      "Weight": 1132
+    },
+    "description": {
+      "$type": "Tela.Erp.Core.GcFieldDataSummary, Tela.Erp.Core",
+      "ColumnRef": "description",
+      "MinLength": 18,
+      "MaxLength": 295,
+      "AreNumeric": false,
+      "AreIntegers": false,
+      "EmptyRowsCount": 0,
+      "Weight": 4607
+    }
+  },
+  "FieldsImplemented": {
+    "code": {
+      "GcColumnRef": "code",
+      "DataType": "Code",
+      "Min": 1,
+      "Max": 20,
+      "EnumPosition": [
+        "Code"
+      ],
+      "TypeId": "Tela.Erp.Interfaces.Annotations.GcEnumFieldAttribute, Tela.Erp.Interfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    "name": {
+      "GcColumnRef": "name",
+      "DataType": "Description",
+      "Min": 1,
+      "Max": 100,
+      "EnumPosition": [
+        "Value",
+        "Comments"
+      ],
+      "TypeId": "Tela.Erp.Interfaces.Annotations.GcEnumFieldAttribute, Tela.Erp.Interfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    "description": {
+      "GcColumnRef": "description",
+      "DataType": "Memo",
+      "Min": 1,
+      "Max": 1000,
+      "EnumPosition": [
+        "CommentsAdditional"
+      ],
+      "TypeId": "Tela.Erp.Interfaces.Annotations.GcEnumFieldAttribute, Tela.Erp.Interfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    }
+  }
+}
