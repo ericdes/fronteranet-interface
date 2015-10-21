@@ -14,7 +14,7 @@
   },
   "EnumName": "UnitOfWeight",
   "JsonFilename": null,
-  "Namespace": "Frontera.Base",
+  "Namespace": "IFronteranet.Gc",
   "CodeField": "code",
   "ValueField": "name",
   "EnumFieldList": {
