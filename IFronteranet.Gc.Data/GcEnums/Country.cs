@@ -9,7 +9,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace IFronteranet.Gc
+namespace IFronteranet.Gc.Data
 {
     using ITela.Gc;
     

@@ -8,8 +8,8 @@
     <ProjectGuid>{D8A2BA99-10BF-4750-ADEC-ABF36F719042}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>IFronteranet.Gc</RootNamespace>
-    <AssemblyName>IFronteranet.Gc</AssemblyName>
+    <RootNamespace>IFronteranet.Gc.Data</RootNamespace>
+    <AssemblyName>IFronteranet.Gc.Data</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -52,8 +52,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="ITela.Gc">
-      <HintPath>..\..\tela-interface\ITela.Gc\bin\Release\ITela.Gc.dll</HintPath>
+    <Reference Include="ITela">
+      <HintPath>..\..\tela-interface\ITela\bin\Release\ITela.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />

@@ -12,14 +12,13 @@
       "TypeId": "Tela.Erp.Interfaces.Annotations.GcMetadataAttribute, Tela.Erp.Interfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
     }
   },
-  "EnumName": "UnitOfWeight",
+  "EnumName": "UnitOfVolume",
   "JsonFilename": null,
-  "Namespace": "IFronteranet.Gc",
+  "Namespace": "IFronteranet.Gc.Data",
   "CodeField": "code",
   "ValueField": "name",
   "EnumFieldList": {
-    "LBR": "Lb"
-    //"STN": "ton"
+    "GLL": "Gallon"
   },
   "GcFieldsAnalyzed": {
     "code": {

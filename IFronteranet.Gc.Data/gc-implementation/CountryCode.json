@@ -14,7 +14,7 @@
   },
   "EnumName": "Country",
   "JsonFilename": null,
-  "Namespace": "IFronteranet.Gc",
+  "Namespace": "IFronteranet.Gc.Data",
   "CodeField": "Alpha2Code",
   "ValueField": "Name",
   "EnumFieldList": {

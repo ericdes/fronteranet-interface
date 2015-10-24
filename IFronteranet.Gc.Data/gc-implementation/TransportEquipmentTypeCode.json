@@ -14,7 +14,7 @@
   },
   "EnumName": "TransportEquipmentType",
   "JsonFilename": null,
-  "Namespace": "IFronteranet.Gc",
+  "Namespace": "IFronteranet.Gc.Data",
   "CodeField": "code",
   "ValueField": "name",
   "EnumFieldList": {

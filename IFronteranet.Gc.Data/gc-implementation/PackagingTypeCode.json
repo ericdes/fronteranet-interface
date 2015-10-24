@@ -3,33 +3,57 @@
     "$type": "Tela.Erp.Core.GcMetadata, Tela.Erp.Core",
     "GenericodeVersion": "1.0",
     "Code": "gc",
-    "Name": "UnitOfMeasureCode",
-    "Version": "8e",
+    "Name": "PackagingTypeCode",
+    "Version": "9e",
     "Information": {
-      "LocationUri": "http://docs.oasis-open.org/ubl/os-UBL-2.1/cl/gc/default/UnitOfMeasureCode-2.1.gc",
+      "LocationUri": "http://docs.oasis-open.org/ubl/os-UBL-2.1/cl/gc/default/PackagingTypeCode-2.1.gc",
       "IsRestriction": false,
-      "Filename": "UnitOfMeasureCode-2.1.gc",
+      "Filename": "PackagingTypeCode-2.1.gc",
       "TypeId": "Tela.Erp.Interfaces.Annotations.GcMetadataAttribute, Tela.Erp.Interfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
     }
   },
-  "EnumName": "UnitOfVolume",
+  "EnumName": "PackagingType",
   "JsonFilename": null,
-  "Namespace": "IFronteranet.Gc",
+  "Namespace": "IFronteranet.Gc.Data",
   "CodeField": "code",
   "ValueField": "name",
   "EnumFieldList": {
-    "GLL": "Gallon"
+    "PX": "Pallet", 
+    "BG" : "Bag",
+    "BK": "Basket",
+    "BX":"Box",
+    "BA": "Barrel",
+    "CN": "Container",
+    "CL":"Coil",
+    "BH":"Bunch",
+    "CR":"Crate",
+    "DR":"Drum",
+    "EN":"Envelop",
+    "PL":"Pail",
+    "RL":"Reel",
+    "RO":"Roll",
+    "TU":"Tube",
+    "BE":"Bundle",
+    "BI":"Bin",
+    "CS":"Case",
+    "SA":"Sack",
+    "SI":"Skid",
+    "TT":"Tote",
+    "PU":"Tray",
+    "GL":"Gallon",
+    "BJ":"Bucket",
+    "PP":"Piece"	
   },
   "GcFieldsAnalyzed": {
     "code": {
       "$type": "Tela.Erp.Core.GcFieldDataSummary, Tela.Erp.Core",
       "ColumnRef": "code",
       "MinLength": 2,
-      "MaxLength": 3,
+      "MaxLength": 2,
       "AreNumeric": false,
       "AreIntegers": false,
       "EmptyRowsCount": 0,
-      "Weight": 5723
+      "Weight": 756
     },
     "status": {
       "$type": "Tela.Erp.Core.GcFieldDataSummary, Tela.Erp.Core",
@@ -38,66 +62,46 @@
       "MaxLength": 1,
       "AreNumeric": false,
       "AreIntegers": false,
-      "EmptyRowsCount": 1708,
-      "Weight": 382
+      "EmptyRowsCount": 377,
+      "Weight": 1
     },
     "name": {
       "$type": "Tela.Erp.Core.GcFieldDataSummary, Tela.Erp.Core",
       "ColumnRef": "name",
       "MinLength": 3,
-      "MaxLength": 88,
+      "MaxLength": 82,
       "AreNumeric": false,
       "AreIntegers": false,
       "EmptyRowsCount": 0,
-      "Weight": 40033
+      "Weight": 8704
     },
     "description": {
       "$type": "Tela.Erp.Core.GcFieldDataSummary, Tela.Erp.Core",
       "ColumnRef": "description",
-      "MinLength": 12,
-      "MaxLength": 291,
+      "MinLength": 14,
+      "MaxLength": 206,
       "AreNumeric": false,
       "AreIntegers": false,
-      "EmptyRowsCount": 1340,
-      "Weight": 67448
+      "EmptyRowsCount": 297,
+      "Weight": 6849
     },
-    "levelcategory": {
+    "numeric": {
       "$type": "Tela.Erp.Core.GcFieldDataSummary, Tela.Erp.Core",
-      "ColumnRef": "levelcategory",
+      "ColumnRef": "numeric",
       "MinLength": 1,
-      "MaxLength": 7,
+      "MaxLength": 47,
       "AreNumeric": false,
       "AreIntegers": false,
       "EmptyRowsCount": 0,
-      "Weight": 4136
-    },
-    "symbol": {
-      "$type": "Tela.Erp.Core.GcFieldDataSummary, Tela.Erp.Core",
-      "ColumnRef": "symbol",
-      "MinLength": 1,
-      "MaxLength": 20,
-      "AreNumeric": false,
-      "AreIntegers": false,
-      "EmptyRowsCount": 543,
-      "Weight": 9267
-    },
-    "conversionfactor": {
-      "$type": "Tela.Erp.Core.GcFieldDataSummary, Tela.Erp.Core",
-      "ColumnRef": "conversionfactor",
-      "MinLength": 1,
-      "MaxLength": 40,
-      "AreNumeric": false,
-      "AreIntegers": false,
-      "EmptyRowsCount": 610,
-      "Weight": 19805
+      "Weight": 2302
     }
   },
   "FieldsImplemented": {
     "code": {
       "GcColumnRef": "code",
-      "DataType": "Code",
-      "Min": 1,
-      "Max": 20,
+      "DataType": "PackagingTypeCode",
+      "Min": 2,
+      "Max": 2,
       "EnumPosition": [
         "Code"
       ],
@@ -127,32 +131,14 @@
       "DataType": "Memo",
       "Min": 1,
       "Max": 1000,
-      "EnumPosition": [
-        "CommentsAdditional"
-      ],
-      "TypeId": "Tela.Erp.Interfaces.Annotations.GcEnumFieldAttribute, Tela.Erp.Interfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
-    },
-    "levelcategory": {
-      "GcColumnRef": "levelcategory",
-      "DataType": "StringValue<StringMin1, StringMax7>",
-      "Min": 1,
-      "Max": 7,
       "EnumPosition": [],
       "TypeId": "Tela.Erp.Interfaces.Annotations.GcEnumFieldAttribute, Tela.Erp.Interfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
-    "symbol": {
-      "GcColumnRef": "symbol",
-      "DataType": "StringValue<StringMin1, StringMax20>",
+    "numeric": {
+      "GcColumnRef": "numeric",
+      "DataType": "StringValue<StringMin1, StringMax47>",
       "Min": 1,
-      "Max": 20,
-      "EnumPosition": [],
-      "TypeId": "Tela.Erp.Interfaces.Annotations.GcEnumFieldAttribute, Tela.Erp.Interfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
-    },
-    "conversionfactor": {
-      "GcColumnRef": "conversionfactor",
-      "DataType": "StringValue<StringMin1, StringMax40>",
-      "Min": 1,
-      "Max": 40,
+      "Max": 47,
       "EnumPosition": [],
       "TypeId": "Tela.Erp.Interfaces.Annotations.GcEnumFieldAttribute, Tela.Erp.Interfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
     }
