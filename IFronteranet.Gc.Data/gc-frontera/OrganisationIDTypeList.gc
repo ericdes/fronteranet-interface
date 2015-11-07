@@ -45,10 +45,18 @@
 	<SimpleCodeList>
 		<Row>
 			<Value ColumnRef="code">
-				<SimpleValue>FOv1</SimpleValue>
+				<SimpleValue>v1</SimpleValue>
 			</Value>
 			<Value ColumnRef="name">
 				<SimpleValue>Frontera Office v.1 Contact Identifier</SimpleValue>
+			</Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code">
+				<SimpleValue>v2</SimpleValue>
+			</Value>
+			<Value ColumnRef="name">
+				<SimpleValue>Fronteranet v2 Client Identifier</SimpleValue>
 			</Value>
 		</Row>
 	</SimpleCodeList>  

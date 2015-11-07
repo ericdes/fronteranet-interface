@@ -18,7 +18,8 @@
   "CodeField": "code",
   "ValueField": "name",
   "EnumFieldList": {
-    "FOv1": "FOv1"
+    "v1": "v1",
+    "v2": "v2"
   },
   "GcFieldsAnalyzed": {
     "code": {
@@ -45,9 +46,9 @@
   "FieldsImplemented": {
     "code": {
       "GcColumnRef": "code",
-      "DataType": "StringValue<StringMax4>",
+      "DataType": "StringValue<StringMax15>",
       "Min": 1,
-      "Max": 4,
+      "Max": 15,
       "EnumPosition": [
         "Code"
       ],

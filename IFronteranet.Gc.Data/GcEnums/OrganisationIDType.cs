@@ -23,6 +23,11 @@ namespace IFronteranet.Gc.Data
         /// <summary>
         /// Frontera Office v.1 Contact Identifier
         /// </summary>
-        FOv1,
+        v1,
+        
+        /// <summary>
+        /// Fronteranet v2 Client Identifier
+        /// </summary>
+        v2,
     }
 }
