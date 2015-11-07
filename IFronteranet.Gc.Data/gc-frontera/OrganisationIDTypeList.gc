@@ -19,7 +19,7 @@
 		<Version>1.0</Version>
 		<CanonicalUri>urn:oasis:names:specification:ciq:schema:xsd:OrganisationIDTypeList</CanonicalUri>
 		<CanonicalVersionUri>urn:oasis:names:specification:ciq:schema:xsd:OrganisationIDTypeList-1.0</CanonicalVersionUri>
-		<LocationUri>http://docs.oasis-open.org/ciq/v3.0/xsd/genericode/default/gc-files/xNL/OrganisationIDTypeList-1.0.gc</LocationUri>
+		<LocationUri>https://raw.githubusercontent.com/ericdes/fronteranet-interface/master/IFronteranet.Gc.Data/gc-frontera/OrganisationIDTypeList.gc</LocationUri>
 		<Agency>
 			<LongName>OASIS Customer Information Quality Specifications</LongName>
 			<Identifier>CIQ</Identifier>

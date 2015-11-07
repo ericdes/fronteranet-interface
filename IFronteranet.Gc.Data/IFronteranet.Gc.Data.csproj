@@ -35,7 +35,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <None Include="gc-frontera\OrganisationIDTypeList.gc" />
     <None Include="gc-implementation\CountryCode.json" />
+    <None Include="gc-implementation\OrganisationIDTypeCode.json" />
     <None Include="gc-implementation\OrganisationNameElementTypeCode.json" />
     <None Include="gc-implementation\PackagingTypeCode.json" />
     <None Include="gc-implementation\TransportEquipmentTypeCode.json" />
@@ -46,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GcEnums\Country.cs" />
+    <Compile Include="GcEnums\OrganisationIDType.cs" />
     <Compile Include="GcEnums\OrganisationNameElement.cs" />
     <Compile Include="GcEnums\PackagingType.cs" />
     <Compile Include="GcEnums\TransportEquipmentType.cs" />

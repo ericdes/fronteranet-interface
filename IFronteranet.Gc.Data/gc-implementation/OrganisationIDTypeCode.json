@@ -1,0 +1,67 @@
+{
+  "Metadata": {
+    "$type": "Tela.Erp.Core.GcMetadata, Tela.Erp.Core",
+    "GenericodeVersion": "1.0",
+    "Code": "gc",
+    "Name": "OrganisationIDTypeCode",
+    "Version": "1.0",
+    "Information": {
+      "LocationUri": "https://raw.githubusercontent.com/ericdes/fronteranet-interface/master/IFronteranet.Gc.Data/gc-frontera/OrganisationIDTypeList.gc",
+      "IsRestriction": false,
+      "Filename": "OrganisationIDTypeList.gc",
+      "TypeId": "ITela.Gc.GcMetadataAttribute, ITela, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    }
+  },
+  "EnumName": "OrganisationIDType",
+  "JsonFilename": null,
+  "Namespace": "IFronteranet.Gc.Data",
+  "CodeField": "code",
+  "ValueField": "name",
+  "EnumFieldList": {
+    "FOv1": "FOv1"
+  },
+  "GcFieldsAnalyzed": {
+    "code": {
+      "$type": "Tela.Erp.Core.GcFieldDataSummary, Tela.Erp.Core",
+      "ColumnRef": "code",
+      "MinLength": 4,
+      "MaxLength": 4,
+      "AreNumeric": false,
+      "AreIntegers": false,
+      "EmptyRowsCount": 0,
+      "Weight": 4
+    },
+    "name": {
+      "$type": "Tela.Erp.Core.GcFieldDataSummary, Tela.Erp.Core",
+      "ColumnRef": "name",
+      "MinLength": 38,
+      "MaxLength": 38,
+      "AreNumeric": false,
+      "AreIntegers": false,
+      "EmptyRowsCount": 0,
+      "Weight": 38
+    }
+  },
+  "FieldsImplemented": {
+    "code": {
+      "GcColumnRef": "code",
+      "DataType": "StringValue<StringMax4>",
+      "Min": 1,
+      "Max": 4,
+      "EnumPosition": [
+        "Code"
+      ],
+      "TypeId": "ITela.Gc.GcEnumFieldAttribute, ITela, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    "name": {
+      "GcColumnRef": "name",
+      "DataType": "StringValue<StringMax200>",
+      "Min": 1,
+      "Max": 200,
+      "EnumPosition": [
+        "Comments"
+      ],
+      "TypeId": "ITela.Gc.GcEnumFieldAttribute, ITela, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    }
+  }
+}
