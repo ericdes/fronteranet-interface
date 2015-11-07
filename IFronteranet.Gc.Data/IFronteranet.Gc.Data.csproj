@@ -36,6 +36,7 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="gc-implementation\CountryCode.json" />
+    <None Include="gc-implementation\OrganisationNameElementTypeCode.json" />
     <None Include="gc-implementation\PackagingTypeCode.json" />
     <None Include="gc-implementation\TransportEquipmentTypeCode.json" />
     <None Include="gc-implementation\UnitOfVolumeCode.json" />
@@ -45,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GcEnums\Country.cs" />
+    <Compile Include="GcEnums\OrganisationNameElement.cs" />
     <Compile Include="GcEnums\PackagingType.cs" />
     <Compile Include="GcEnums\TransportEquipmentType.cs" />
     <Compile Include="GcEnums\UnitOfVolume.cs" />

@@ -1,0 +1,68 @@
+{
+  "Metadata": {
+    "$type": "Tela.Erp.Core.GcMetadata, Tela.Erp.Core",
+    "GenericodeVersion": "1.0",
+    "Code": "gc",
+    "Name": "OrganisationNameElemenTypeCode",
+    "Version": "01",
+    "Information": {
+      "LocationUri": "https://raw.githubusercontent.com/ericdes/tela-interface/master/CIQ-3.0/default/xNL/OrganisationNameElementList.gc",
+      "IsRestriction": true,
+      "Filename": "OrganisationNameElementList-1.0.gc",
+      "TypeId": "ITela.Gc.GcMetadataAttribute, ITela, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    }
+  },
+  "EnumName": "OrganisationNameElementType",
+  "JsonFilename": null,
+  "Namespace": "IFronteranet.Gc.Data",
+  "CodeField": "code",
+  "ValueField": "name",
+  "EnumFieldList": {
+    "NameOnly": "NameOnly",
+    "FullName": "FullName"
+  },
+  "GcFieldsAnalyzed": {
+    "code": {
+      "$type": "Tela.Erp.Core.GcFieldDataSummary, Tela.Erp.Core",
+      "ColumnRef": "code",
+      "MinLength": 8,
+      "MaxLength": 8,
+      "AreNumeric": false,
+      "AreIntegers": false,
+      "EmptyRowsCount": 0,
+      "Weight": 24
+    },
+    "name": {
+      "$type": "Tela.Erp.Core.GcFieldDataSummary, Tela.Erp.Core",
+      "ColumnRef": "name",
+      "MinLength": 55,
+      "MaxLength": 136,
+      "AreNumeric": false,
+      "AreIntegers": false,
+      "EmptyRowsCount": 0,
+      "Weight": 298
+    }
+  },
+  "FieldsImplemented": {
+    "code": {
+      "GcColumnRef": "code",
+      "DataType": "StringValue<StringMax10>",
+      "Min": 1,
+      "Max": 10,
+      "EnumPosition": [
+        "Code"
+      ],
+      "TypeId": "ITela.Gc.GcEnumFieldAttribute, ITela, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    "name": {
+      "GcColumnRef": "name",
+      "DataType": "StringValue<StringMax200>",
+      "Min": 1,
+      "Max": 200,
+      "EnumPosition": [
+        "Comments"
+      ],
+      "TypeId": "ITela.Gc.GcEnumFieldAttribute, ITela, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    }
+  }
+}
