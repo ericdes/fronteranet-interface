@@ -35,11 +35,19 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <None Include="gc-frontera\FreightAllowanceChargeReasonCode-1.6.gc" />
+    <None Include="gc-frontera\AllowanceChargeReasonCode-1.0.gc" />
+    <None Include="gc-frontera\PriceTypeCode-1.0.gc" />
+    <None Include="gc-frontera\AllowanceChargeID-1.0.gc" />
     <None Include="gc-frontera\OrganisationIDTypeList.gc" />
+    <None Include="gc-implementation\AllowanceChargeID.json" />
+    <None Include="gc-implementation\AllowanceChargeReasonCode.json" />
     <None Include="gc-implementation\CountryCode.json" />
+    <None Include="gc-implementation\CurrencyCode.json" />
     <None Include="gc-implementation\OrganisationIDTypeCode.json" />
     <None Include="gc-implementation\OrganisationNameElementTypeCode.json" />
     <None Include="gc-implementation\PackagingTypeCode.json" />
+    <None Include="gc-implementation\PriceTypeCode.json" />
     <None Include="gc-implementation\TransportEquipmentTypeCode.json" />
     <None Include="gc-implementation\UnitOfVolumeCode.json" />
     <None Include="gc-implementation\UnitOfWeightCode.json" />
@@ -47,10 +55,14 @@
     <!-- A reference to the entire .NET Framework is automatically included -->
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GcEnums\AllowanceCharge.cs" />
+    <Compile Include="GcEnums\AllowanceChargeReasonCode.cs" />
     <Compile Include="GcEnums\Country.cs" />
+    <Compile Include="GcEnums\Currency.cs" />
     <Compile Include="GcEnums\OrganisationIDType.cs" />
     <Compile Include="GcEnums\OrganisationNameElement.cs" />
     <Compile Include="GcEnums\PackagingType.cs" />
+    <Compile Include="GcEnums\PriceType.cs" />
     <Compile Include="GcEnums\TransportEquipmentType.cs" />
     <Compile Include="GcEnums\UnitOfVolume.cs" />
     <Compile Include="GcEnums\UnitOfWeight.cs" />

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<gc:CodeList xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://docs.oasis-open.org/codelist/ns/genericode/1.0/ ../../../utility/genericode.xsd">
+
+	<Identification>
+		<ShortName>AllowanceChargeIDList</ShortName>
+		<LongName>Allowance Charge ID List</LongName> 
+		<Version>1.0</Version>
+		<CanonicalUri>urn:oasis:names:specification:ciq:schema:xsd:OrganisationIDTypeList</CanonicalUri>
+		<CanonicalVersionUri>urn:oasis:names:specification:ciq:schema:xsd:OrganisationIDTypeList-1.0</CanonicalVersionUri>
+		<LocationUri>https://raw.githubusercontent.com/ericdes/fronteranet-interface/master/IFronteranet.Gc.Data/gc-frontera/AllowanceChargeID-1.0.gc</LocationUri>
+		<Agency>
+			<LongName>Frontera International</LongName>
+			<Identifier>Fronteranet</Identifier>
+		</Agency>
+	</Identification>
+	
+	<ColumnSet>
+		<Column Id="code" Use="required">
+			<ShortName>Code</ShortName>
+			<Data Type="xsd:normalizedString"/>
+		</Column>
+		<Column Id="name" Use="optional">
+			<ShortName>Name</ShortName>
+			<Data Type="xsd:string"/>
+		</Column>
+		<Key Id="codeKey">
+			<ShortName>CodeKey</ShortName>
+			<ColumnRef Ref="code"/>
+		</Key>
+	</ColumnSet>
+	
+	<SimpleCodeList>
+		<Row>
+			<Value ColumnRef="code">
+				<SimpleValue>CrossExpMe</SimpleValue>
+			</Value>
+			<Value ColumnRef="name">
+				<SimpleValue>Crossing or Mexican side Expenses</SimpleValue>
+			</Value>
+		</Row>
+		<Row>
+			<Value ColumnRef="code">
+				<SimpleValue>ExtraStop</SimpleValue>
+			</Value>
+			<Value ColumnRef="name">
+				<SimpleValue>Extra Stop</SimpleValue>
+			</Value>
+		</Row>
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>H</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>Handling</SimpleValue>
+      </Value>
+    </Row>
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>Space</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>Warehouse space</SimpleValue>
+      </Value>
+    </Row>
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>Storage</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>Storage / Day</SimpleValue>
+      </Value>
+    </Row>
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>MinimumCharge</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>Minimum charge to apply</SimpleValue>
+      </Value>
+    </Row>
+	</SimpleCodeList>  
+</gc:CodeList>

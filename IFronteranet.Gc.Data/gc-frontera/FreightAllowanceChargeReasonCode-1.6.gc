@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<gc:CodeList xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://docs.oasis-open.org/codelist/ns/genericode/1.0/ ../../../utility/genericode.xsd">
+
+	<Identification>
+		<ShortName>AllowanceChargeReasonCodeList</ShortName>
+		<LongName>Allowance Charge Reason Code List</LongName> 
+		<Version>1.6</Version>
+		<CanonicalUri></CanonicalUri>
+		<CanonicalVersionUri></CanonicalVersionUri>
+		<LocationUri>https://raw.githubusercontent.com/ericdes/fronteranet-interface/master/IFronteranet.Gc.Data/gc-frontera/AllowanceChargeChargeReasonCode-1.6.gc</LocationUri>
+		<Agency>
+			<LongName>Frontera International</LongName>
+			<Identifier>Fronteranet</Identifier>
+		</Agency>
+	</Identification>
+	
+	<ColumnSet>
+		<Column Id="code" Use="required">
+			<ShortName>Code</ShortName>
+			<Data Type="xsd:normalizedString"/>
+		</Column>
+		<Column Id="name" Use="optional">
+			<ShortName>Name</ShortName>
+			<Data Type="xsd:string"/>
+		</Column>
+    <Column Id="description" Use="optional">
+      <ShortName>Description</ShortName>
+      <Data Type="xsd:string"/>
+    </Column>
+		<Key Id="codeKey">
+			<ShortName>CodeKey</ShortName>
+			<ColumnRef Ref="code"/>
+		</Key>
+	</ColumnSet>
+	
+	<SimpleCodeList>
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>TrailerEmpty</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>Empty trailer</SimpleValue>
+      </Value>
+    </Row>
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>Hazmat</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>Hazmat</SimpleValue>
+      </Value>
+      <Value ColumnRef="description">
+        <SimpleValue>Hazardous material surcharge</SimpleValue>
+      </Value>
+    </Row>
+    <Row>
+			<Value ColumnRef="code">
+				<SimpleValue>XExpense</SimpleValue>
+			</Value>
+			<Value ColumnRef="name">
+				<SimpleValue>Border crossing expense</SimpleValue>
+			</Value>
+      <Value ColumnRef="description">
+        <SimpleValue>Border crossing or international expenses</SimpleValue>
+      </Value>
+    </Row>
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>CustomsPaper</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>Customs paperwork</SimpleValue>
+      </Value>
+    </Row>
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>Pedimento</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>Pedimento of importation</SimpleValue>
+      </Value>
+      <Value ColumnRef="description">
+        <SimpleValue>Charge for preparing Customs paperwork specific to Mexico</SimpleValue>
+      </Value>
+    </Row>
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>SED</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>SED or form 7525-V</SimpleValue>
+      </Value>
+      <Value ColumnRef="description">
+        <SimpleValue>Charge for preparing shipper's export declaration (U.S.A.)</SimpleValue>
+      </Value>
+    </Row>
+    <Row>
+			<Value ColumnRef="code">
+				<SimpleValue>ExtraStop</SimpleValue>
+			</Value>
+			<Value ColumnRef="name">
+				<SimpleValue>Extra stop</SimpleValue>
+			</Value>
+      <Value ColumnRef="description">
+        <SimpleValue>????</SimpleValue>
+      </Value>
+    </Row>
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>Inspection</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>Customs inspection</SimpleValue>
+      </Value>
+      <Value ColumnRef="description">
+        <SimpleValue>Fee or driver time charged for inpection at Customs</SimpleValue>
+      </Value>
+    </Row>
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>Standby</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>Stand-by time</SimpleValue>
+      </Value>
+      <Value ColumnRef="description">
+        <SimpleValue>Time charged for over waiting time</SimpleValue>
+      </Value>
+    </Row>
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>Fumigation</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>Fumigation</SimpleValue>
+      </Value>
+      <Value ColumnRef="description">
+        <SimpleValue>Extra stop at fumigation</SimpleValue>
+      </Value>
+    </Row>
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>Fuel</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>Fuel surcharge</SimpleValue>
+      </Value>
+      <Value ColumnRef="description">
+        <SimpleValue>Fuel surcharge from percentage</SimpleValue>
+      </Value>
+    </Row>
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>H</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>Handling</SimpleValue>
+      </Value>
+      <Value ColumnRef="description">
+        <SimpleValue>Handling expense billed by weight or volume</SimpleValue>
+      </Value>
+    </Row>
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>Space</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>Warehouse space</SimpleValue>
+      </Value>
+      <Value ColumnRef="description">
+        <SimpleValue>Warehouse space expense by surface</SimpleValue>
+      </Value>
+    </Row>
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>Storage</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>Storage</SimpleValue>
+      </Value>
+      <Value ColumnRef="description">
+        <SimpleValue>Storage expense billed by weight or volume</SimpleValue>
+      </Value>
+    </Row>
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>MinimumCharge</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>Minimum charge applies</SimpleValue>
+      </Value>
+    </Row>
+    <Row>
+      <Value ColumnRef="code">
+        <SimpleValue>SatDeliver</SimpleValue>
+      </Value>
+      <Value ColumnRef="name">
+        <SimpleValue>Saturday delivery</SimpleValue>
+      </Value>
+    </Row>
+  </SimpleCodeList>  
+</gc:CodeList>

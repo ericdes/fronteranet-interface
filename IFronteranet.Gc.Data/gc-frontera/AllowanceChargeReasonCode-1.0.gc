@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<gc:CodeList xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://docs.oasis-open.org/codelist/ns/genericode/1.0/ ../../../utility/genericode.xsd">
+
+	<Identification>
+		<ShortName>AllowanceChargeReasonCodeList</ShortName>
+		<LongName>Allowance Charge Reason Code List</LongName> 
+		<Version>1.0</Version>
+		<CanonicalUri>urn:oasis:names:specification:ciq:schema:xsd:OrganisationIDTypeList</CanonicalUri>
+		<CanonicalVersionUri>urn:oasis:names:specification:ciq:schema:xsd:OrganisationIDTypeList-1.0</CanonicalVersionUri>
+		<LocationUri>https://raw.githubusercontent.com/ericdes/fronteranet-interface/master/IFronteranet.Gc.Data/gc-frontera/AllowanceChargeReasonCode-1.0.gc</LocationUri>
+		<Agency>
+			<LongName>Frontera International</LongName>
+			<Identifier>Fronteranet</Identifier>
+		</Agency>
+	</Identification>
+	
+	<ColumnSet>
+		<Column Id="code" Use="required">
+			<ShortName>Code</ShortName>
+			<Data Type="xsd:normalizedString"/>
+		</Column>
+    <Column Id="charge" Use="required">
+      <ShortName>Charge indicator</ShortName>
+      <Data Type="xsd:boolean"/>
+    </Column>
+		<Column Id="name" Use="optional">
+			<ShortName>Name</ShortName>
+			<Data Type="xsd:string"/>
+		</Column>
+		<Key Id="codeKey">
+			<ShortName>CodeKey</ShortName>
+			<ColumnRef Ref="code"/>
+		</Key>
+	</ColumnSet>
+	
+	<SimpleCodeList>
+		<Row>
+			<Value ColumnRef="code">
+				<SimpleValue>MinimumCharge</SimpleValue>
+			</Value>
+      <Value ColumnRef="charge">
+        <SimpleValue>true</SimpleValue>
+      </Value>
+			<Value ColumnRef="name">
+				<SimpleValue>Minimum charge applied</SimpleValue>
+			</Value>
+		</Row>
+	</SimpleCodeList>  
+</gc:CodeList>
